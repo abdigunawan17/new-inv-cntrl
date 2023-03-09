@@ -1,4 +1,5 @@
 @extends('frontend.main_master')
+@section('title_atas', 'Contact me - Bliputuabdi')
 @section('main')
 <!-- main-area -->
 <main>

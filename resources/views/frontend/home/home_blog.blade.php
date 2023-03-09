@@ -20,7 +20,7 @@
                                 <div class="blog__post__content">
                                     <span class="date">{{ Carbon\Carbon::parse($item->created_at)->diffForHumans() }}</span>
                                     <h3 class="title"><a href="{{ route('blog.details', $item->blog_slug) }}">{{ $item->blog_title }}</a></h3>
-                                    <a href="{{ route('blog.details', $item->blog_slug) }}" class="read__more">Read mORe</a>
+                                    <a href="{{ route('blog.details', $item->blog_slug) }}" class="read__more">Read more</a>
                                 </div>
                             </div>
                         </div>
@@ -28,7 +28,7 @@
                         
                     </div>
                     <div class="blog__button text-center">
-                        <a href="blog.html" class="btn">more blog</a>
+                        <a href="{{ route('home.blog') }}" class="btn">more blog</a>
                     </div>
                 </div>
             </section>

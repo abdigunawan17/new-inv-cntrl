@@ -5,9 +5,6 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Home\{HomeSliderController, BlogCategoryController, BlogController, AboutController, ContactController, PortfolioController};
 //
 
-Route::get('/', function () {
-    return view('frontend.index');
-});
 
 
 //admin all route
@@ -37,9 +34,9 @@ Route::controller(PortfolioController::class)->group(function () {
     Route::get('/delete/portfolio/{id}', 'DeletePortfolio')->middleware(['auth', 'verified'])->name('delete.portfolio');
 
     //frontend
-
     Route::get('/portfolio/details/{id}', 'DetailsPortfolio')->name('portfolio.details');
-
+    Route::get('/portfolio', 'HomePortfolio')->name('home.portfolio');
+    Route::get('/', 'WelcomeHome')->name('home.main');
 });
 
 

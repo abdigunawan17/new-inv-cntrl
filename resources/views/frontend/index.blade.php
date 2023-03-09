@@ -1,4 +1,5 @@
 @extends('frontend.main_master')
+@section('title_atas', 'Persolal Portfolio - Bliputuabdi')
 @section('main')
 
 
